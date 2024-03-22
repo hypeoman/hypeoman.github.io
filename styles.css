@@ -1,5 +1,16 @@
+@font-face {
+  font-family: "Monocraft"; 
+  src: local("Monocraft"), url("../fonts/Monocraft.ttf") format("truetype"); 
+} 
+
+@font-face {
+  font-family: 'Apple II Pro';
+  src: url('fonts/Apple II Pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Apple II Pro', monospace;
   background-color: #000;
   color: #fff;
   padding: 20px;
@@ -8,7 +19,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #000;
   padding: 20px;
@@ -19,20 +30,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.photo img {
-  width: 200px;
-  height: 200px;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+.ascii {
+  font-size: 1px;
 }
 
 .info {
   margin-top: 20px;
+  text-align: left;
 }
 
 .projects {
